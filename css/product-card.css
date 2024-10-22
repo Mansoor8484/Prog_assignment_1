@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    --primary-color: #bbbbbc;
+    --secondary-color:  #020202;
+    --color-option-2: #F71735;
+    --color-option-1: #121010;
+    --color-option-3: #f3f2f2;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-img-col{
+    flex: 1;
+    overflow: hidden;
+}
+
+.left-img-col img{
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.right-info-col{
+    position: absolute;
+    width: 50%;
+    left: 800;
+    right: 10px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 1.5rem;
+
+}
+
+.right-info-col h3{
+    font-size: 50PX;
+    margin-bottom: 50PX;
+}
+
+.right-info-col H5{
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+
+}
+
+.right-info-col p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.right-info-col .available-colors{
+    padding-left: 100px;
+    margin-bottom: 100px;
+}
+
+.black-color-container{
+    height: 25px;
+    width: 25px;
+    margin: 0px 20px 0 20px;
+    background-color: var(--color-option-1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red-color-container{
+    height: 25px;
+    width: 25px;
+    margin: 0px 20px 0 20px;
+    background-color: var(--color-option-2);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.white-color-container{
+    height: 25px;
+    width: 25px;
+    margin: 0px 20px 0 20px;
+    background-color: var(--color-option-3);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.price{
+    padding: 60px; 
+    display: flex;
+    flex-direction: row;   
+}
+
+.price h4{
+    font-size: 40px;
+
+}
+
+.price .buy-btn{
+    color: var(--primary-color);
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 300px;
+    border-radius: 10%;
+    padding:10px;
+    background-color: var(--color-option-1);
+
+    transition: background .5s ease;
+}
+
+
+.price .buy-btn:hover{
+    color: var(--color-option-3);
+    background-color: var(--color-option-1);
+}
